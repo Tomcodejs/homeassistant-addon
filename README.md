@@ -24,7 +24,7 @@ Pas besoin de Docker Compose séparé. Une fois le repo publié sur GitHub
 
 1. Dans HA : **Réglages → Modules complémentaires → Boutique**
 2. Menu **⋮** (en haut à droite) → **Dépôts**
-3. Colle l'URL de ton repo GitHub, ex. `https://github.com/<ton-user>/house-comms`
+3. Colle l'URL de ton repo GitHub, ex. `https://github.com/Tomcodejs/homeassitanr-addon`
    → **Ajouter**
 4. Un nouvel add-on **"House Comms"** apparaît dans la boutique (parfois
    après un rafraîchissement de la page). Clique dessus → **Installer**.
