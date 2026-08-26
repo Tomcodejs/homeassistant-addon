@@ -1,8 +1,8 @@
-name: "House Comms Server"
-version: "1.0.0"
+name: "House Comms"
+version: "1.1.0"
 slug: "house_comms"
 description: "Messagerie interne connectée aux comptes Home Assistant"
-url: "https://github.com/Tomcodejs/homeassistant-addon"
+url: "https://github.com/OWNER/house-comms"
 arch:
   - amd64
   - aarch64
@@ -12,6 +12,8 @@ arch:
 startup: application
 boot: auto
 init: false
+map:
+  - config:rw
 ports:
   8091/tcp: 8091
 ports_description:
