@@ -1,0 +1,13 @@
+services:
+  house-comms:
+    build: ./server
+    container_name: house-comms
+    restart: unless-stopped
+    ports:
+      - "8091:8091"
+    volumes:
+      - ./data:/data
+    environment:
+      # Set this to your HA URL once you know it, to lock down CORS.
+      # Example: ALLOWED_ORIGIN=http://homeassistant.local:8123
+      - ALLOWED_ORIGIN=*

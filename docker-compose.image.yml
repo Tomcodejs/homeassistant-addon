@@ -1,0 +1,13 @@
+services:
+  house-comms:
+    # Replace OWNER with your GitHub username or org once the image has
+    # been published by the GitHub Actions workflow.
+    image: ghcr.io/OWNER/house-comms:latest
+    container_name: house-comms
+    restart: unless-stopped
+    ports:
+      - "8091:8091"
+    volumes:
+      - ./data:/data
+    environment:
+      - ALLOWED_ORIGIN=*
