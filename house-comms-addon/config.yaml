@@ -1,0 +1,20 @@
+name: "House Comms"
+version: "1.0.0"
+slug: "house_comms"
+description: "Messagerie interne connectée aux comptes Home Assistant"
+url: "https://github.com/OWNER/house-comms"
+arch:
+  - amd64
+  - aarch64
+  - armv7
+  - armhf
+  - i386
+startup: application
+boot: auto
+init: false
+ports:
+  8091/tcp: 8091
+ports_description:
+  8091/tcp: "API de la messagerie House Comms (utilisée par la carte Lovelace)"
+options: {}
+schema: {}
