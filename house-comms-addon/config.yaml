@@ -1,4 +1,4 @@
-name: "House Comms"
+name: "House Comms Server"
 version: "1.0.0"
 slug: "house_comms"
 description: "Messagerie interne connectée aux comptes Home Assistant"
