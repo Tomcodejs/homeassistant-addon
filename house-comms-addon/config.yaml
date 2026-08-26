@@ -2,7 +2,7 @@ name: "House Comms Server"
 version: "1.1.0"
 slug: "house_comms"
 description: "Messagerie interne connectée aux comptes Home Assistant"
-url: "https://github.com/OWNER/house-comms"
+url: "https://github.com/Tomcodejs/homeassistant-addon"
 arch:
   - amd64
   - aarch64
