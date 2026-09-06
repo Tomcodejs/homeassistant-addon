@@ -1,0 +1,23 @@
+name: "PufferPanel"
+version: "3.0.9"
+slug: "pufferpanel"
+description: "Panneau de gestion de serveurs de jeux (Minecraft et autres)"
+url: "https://pufferpanel.com"
+arch:
+  - amd64
+  - aarch64
+startup: services
+boot: auto
+init: false
+ports:
+  8080/tcp: 8080
+  5657/tcp: 5657
+ports_description:
+  8080/tcp: "Interface web PufferPanel"
+  5657/tcp: "SFTP pour les serveurs de jeux"
+map:
+  - addon_config:rw
+  - share:rw
+  - data:rw
+options: {}
+schema: {}
