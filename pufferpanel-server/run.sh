@@ -31,12 +31,12 @@ if [ "$CREATE_USER" = "true" ] && [ -n "$USERNAME" ] && [ -n "$PASSWORD" ]; then
         echo "[PufferPanel Add-on] Creation de l'utilisateur ${USERNAME} (admin: ${IS_ADMIN})..."
 
         if [ "$IS_ADMIN" = "true" ]; then
-            pufferpanel user add "$USERNAME" --email "$EMAIL" --password "$PASSWORD" --admin \
+            pufferpanel --workDir /data user add "$USERNAME" --email "$EMAIL" --password "$PASSWORD" --admin \
                 && touch "$MARKER" \
                 && echo "[PufferPanel Add-on] Utilisateur ${USERNAME} cree avec succes (admin)." \
                 || echo "[PufferPanel Add-on] Echec de la creation (l'utilisateur existe peut-etre deja)."
         else
-            pufferpanel user add "$USERNAME" --email "$EMAIL" --password "$PASSWORD" \
+            pufferpanel --workDir /data user add "$USERNAME" --email "$EMAIL" --password "$PASSWORD" \
                 && touch "$MARKER" \
                 && echo "[PufferPanel Add-on] Utilisateur ${USERNAME} cree avec succes (non-admin)." \
                 || echo "[PufferPanel Add-on] Echec de la creation (l'utilisateur existe peut-etre deja)."
