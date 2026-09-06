@@ -1,5 +1,5 @@
 name: "PufferPanel"
-version: "3.0.9.ha.1.0.1"
+version: "3.0.9"
 slug: "pufferpanel"
 description: "Panneau de gestion de serveurs de jeux (Minecraft et autres)"
 url: "https://pufferpanel.com"
@@ -20,5 +20,15 @@ map:
   - addon_config:rw
   - share:rw
   - data:rw
-options: {}
-schema: {}
+options:
+  create_user: false
+  username: "admin"
+  email: "admin@example.com"
+  password: ""
+  is_admin: true
+schema:
+  create_user: bool
+  username: str
+  email: email
+  password: password
+  is_admin: bool
