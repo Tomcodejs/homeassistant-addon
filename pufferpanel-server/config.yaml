@@ -9,6 +9,7 @@ arch:
 startup: services
 boot: auto
 init: false
+docker_api: true
 ports:
   8080/tcp: 8080
   5657/tcp: 5657
